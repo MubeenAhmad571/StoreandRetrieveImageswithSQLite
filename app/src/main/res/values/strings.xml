@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Store and Retrieve Images with SQLite</string>
+    <string name="enter_the_name_of_image_here">Enter the name of image here</string>
+    <string name="save_image">Save Image</string>
+</resources>

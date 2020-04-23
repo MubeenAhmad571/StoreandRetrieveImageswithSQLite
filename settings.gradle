@@ -1,0 +1,2 @@
+rootProject.name='Store and Retrieve Images with SQLite'
+include ':app'

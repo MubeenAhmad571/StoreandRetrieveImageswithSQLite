@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageNameET"
+        android:hint="@string/enter_the_name_of_image_here"
+        android:maxLength="25"
+        android:textColor="@android:color/holo_green_dark"
+        android:textColorHint="@android:color/holo_green_dark"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/image"
+        android:layout_below="@id/imageNameET"
+        android:src="@drawable/ic_mood"
+        android:scaleType="centerCrop"
+        android:onClick="chooseImage"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveBtn"
+        android:layout_below="@id/image"
+        android:text="@string/save_image"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_green_dark"
+        android:textColor="@android:color/white"
+        android:onClick="storeImage"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/moveToShowActivitity"
+        android:layout_below="@id/saveBtn"
+        android:background="@android:color/holo_green_dark"
+        android:textColor="@android:color/white"
+        android:text="Move To Show Activity"
+        android:onClick="moveToshowActivity"
+        android:layout_marginTop="2dp"/>
+
+</RelativeLayout>
